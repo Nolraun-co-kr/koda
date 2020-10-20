@@ -1,0 +1,63 @@
+.sitemap {
+  @apply fixed left-0 bg-white shadow-lg;
+  border-bottom: 2px solid #20b1a8;
+  top: 80px;
+  width: 100%;
+  display: none;
+  padding-bottom: 50px;
+  @media screen and (max-width: 1620px) {
+    display: none !important;
+  }
+
+  .sitemap__header {
+    @apply flex items-center;
+    height: 120px;
+    .logo {
+      flex: 1;
+    }
+    .btn {
+      @apply ml-auto;
+      text-indent: -9999px;
+      overflow: hidden;
+      background: url('../images/close-x.png') no-repeat center;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .sitemap__body {
+    @apply flex;
+    margin:0 -25px;
+    margin-top: 10px;
+
+    .col__title {
+      border-bottom: 2px solid #20b1a8;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      a {
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+    .col {
+      flex: 1;
+      padding:0 25px;
+    }
+    .col__item {
+      margin-bottom: 1rem;
+      & > a {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+    .col__depth {
+      margin-top: 3px;
+      a {
+        display: block;
+        font-size: 16px;
+        line-height:28px;
+        color:#666666;
+      }
+    }
+  }
+}

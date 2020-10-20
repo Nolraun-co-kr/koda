@@ -1,0 +1,299 @@
+.header {
+  @apply bg-white relative;
+}
+.header__top {
+  .wrap {
+    height: 120px;
+    @media screen and (max-width: 1620px) {
+      height: 90px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 60px;
+    }
+  }
+  .header__logo {
+    margin-right: 110px;
+    @media screen and (max-width: 1620px) {
+      margin-right: 50px;
+      img {
+        height: 60px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      margin-right: 20px;
+      img {
+        height: 40px;
+      }
+    }
+  }
+  .searchform {
+    flex: 1;
+    max-width: 760px;
+    height: 60px;
+    margin-right: auto;
+    background: linear-gradient(90deg, rgba(255,126,0,1) 0%, rgba(32,177,168,1) 100%);
+    padding: 3px;
+    @media screen and (max-width: 1620px) {
+      padding: 2px;
+      height: 50px;
+      max-width: none;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 60px;
+    }
+    .search {
+      width: 100%;
+      height: 100%;
+      @apply flex;
+
+      input {
+        flex: 1;
+        font-size: 18px;
+        padding:0 15px;
+        line-height: 40px;
+        &::placeholder {
+          color:#444;
+        }
+        @media screen and (max-width: 1620px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 768px) {
+          padding:0 10px;
+          font-size: 14px;
+        }
+      }
+      .btn {
+        width: 60px;
+        height: 54px;
+        text-indent: -9999px;
+        overflow: hidden;
+        background:url('../images/search-white.png') no-repeat center;
+        @media screen and (max-width: 1620px) {
+          width: 50px;
+          height: 44px;
+          background-size: auto 25px;
+        }
+        @media screen and (max-width: 7680px) {
+          background-size: auto 22px;
+        }
+      }
+    }
+  }
+  .header__etc {
+    @media screen and (max-width: 1620px) {
+      display: none;
+    }
+    margin-right: 30px;
+
+    a {
+      display: block;
+      width: 170px;
+      line-height: 40px;
+      border: 1px solid #006f69;
+      border-radius: 2em;
+      text-align: center;
+      span {
+        font-size: 18px;
+        color:#006f69;
+        padding-right: 1.5rem;
+        background: url('../images/arrow-right.png') no-repeat right 8px;
+      }
+    }
+  }
+  .header__sns {
+    @media screen and (max-width: 1620px) {
+      display: none;
+    }
+    @apply flex items-center;
+    a {
+      width: 50px;
+      height: 50px;
+      text-indent: -9999px;
+      overflow: hidden;
+
+      & ~ a {
+        margin-left: 10px;
+      }
+
+      &.insta {
+        background: url('../images/sns-insta.png') no-repeat center;
+        background-size: 100% 100%;
+      }
+      &.facebook {
+        background: url('../images/sns-facebook.png') no-repeat center;
+        background-size: 100% 100%;
+      }
+      &.blog {
+        background: url('../images/sns-blog.png') no-repeat center;
+        background-size: 100% 100%;
+      }
+      &.youtube {
+        background: url('../images/sns-youtube.png') no-repeat center;
+        background-size: 100% 100%;
+      }
+    }
+  }
+  .mobile-gnb-button {
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-left: 50px;
+    background: url('../images/hamburger-black.png') no-repeat center;
+    background-size: auto 25px;
+    @media screen and (max-width: 1620px) {
+      display: block;
+    }
+    @media screen and (max-width: 768px) {
+      margin-left: 10px;
+      width: 30px;
+      background-position: right center;
+      background-size: auto 15px;
+    }
+  }
+  .mobile-search-button {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-left: 50px;
+    background: url('../images/search-icon.png') no-repeat center;
+    @media screen and (max-width: 768px) {
+      display: block;
+      margin-left: auto;
+      width: 30px;
+      background-position: right center;
+      background-size: auto 20px;
+    }
+  }
+}
+.header__nav {
+  position: relative;
+  background: linear-gradient(90deg, rgba(255,126,0,1) 0%, rgba(32,177,168,1) 100%);
+  @media screen and (max-width: 1620px) {
+    display: none;
+  }
+  & > .wrap {
+    height: 80px;
+  }
+
+  .sitemap-btn {
+    width: 80px;
+    height: 80px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: #006f69 url('../images/hamburger.png') no-repeat center;
+    background-size: auto 30px;
+  }
+
+  .navlist {
+    @apply flex-1 flex;
+    .navlist__item {
+      flex: 1;
+      &:hover {
+        .navlist__depth {
+          display: block;
+        }
+      }
+    }
+    .navlist__link {
+      display: block;
+      line-height: 80px;
+      color:#fff;
+      font-size: 27px;
+    }
+  }
+}
+
+.navlist__depth {
+  @apply shadow;
+  position:absolute;
+  left: 0;
+  top: 80px;
+  width: 100%;
+  background:#fff;
+  padding: 30px 0;
+  display: none;
+  .depth-name {
+    flex: none;
+    width: 420px;
+    padding: 20px 40px;
+    background: url('../images/navlist-img1.png') no-repeat calc(100% - 70px) bottom;
+    border-right: 1px solid #dddddd;
+
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      margin-top: 1em;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .depth-links {
+    padding: 20px 60px;
+    position: relative;
+    flex: 1;
+  }
+  .depth-links-item {
+    margin-bottom: 1em;
+    &:hover {
+      & > a {
+        color:#20b1a8;
+        &.link {
+          background: url('../images/navlist-arrow.png') no-repeat right center;
+        }
+        & + .depth-links-inner {
+          display: block;
+        }
+      }
+    }
+    & > a {
+      font-size: 18px;
+      display: block;
+      width: 250px;
+    }
+    .depth-links-inner {
+      display: none;
+      padding-top: 15px;
+      position: absolute;
+      left: 360px;
+      height: 100%;
+      top: 0;
+      a {
+        white-space: nowrap;
+        font-size: 16px;
+        display: block;
+        margin-bottom: 12px;
+        color:#666666;
+
+        &:hover {
+          color:#333;
+        }
+      }
+    }
+  }
+
+  .depth-etc {
+    @apply flex items-center;
+
+    a {
+      & ~ a {
+        margin-left: 40px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 18px;
+        margin-top: 15px;
+      }
+    }
+  }
+}

@@ -30,18 +30,123 @@
   $('.mobile-gnb-button').on('click', function(){
     $('.mobile-gnb').show();
   })
-
   $('.mobile-search-button').on('click', function(e){
     e.preventDefault();
     $('.searchform').toggle();
   })
 
+  // main visual
+  var $mainVisualSlider = $('.visual .slider');
+  var $current = $('.visual .slider-controller .paging #current');
+  var $total = $('.visual .slider-controller .paging #total');
+  $mainVisualSlider.on('init afterChange', function(event, slick, currentSlide, nextSlide){
+    $current.text(slick.currentSlide + 1);
+    $total.text(slick.slideCount);
+  });
+
+  $mainVisualSlider.slick({
+    infinite: true,
+    speed: 400,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  })
+  $('.visual .slider-controller .next').click(function() {
+    $mainVisualSlider.slick('slickNext');
+  });
+  $('.visual .slider-controller .stop').click(function() {
+    $(this).hide();
+    $('.visual .slider-controller .play').show();
+    $mainVisualSlider.slick('slickPause');
+  });
+  $('.visual .slider-controller .play').click(function() {
+    $(this).hide();
+    $('.visual .slider-controller .stop').show();
+    $mainVisualSlider.slick('slickPlay');
+  });
+  $('.visual .slider-controller .prev').click(function() {
+    $mainVisualSlider.slick('slickPrev');
+  });
+
+
+  // news slider
+  var $newsSlider = $('.main__news .slider');
+  $newsSlider.slick({
+    infinite: true,
+    speed: 400,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  })
+  $('.main__news-prev').click(function() {
+    $newsSlider.slick('slickPrev');
+  });
+  $('.main__news-next').click(function() {
+    $newsSlider.slick('slickNext');
+  });
+
+  $('.main__stories .item .slider').slick({
+    arrows: false,
+    infinite: true,
+    speed: 400,
+    autoplay: true,
+    dots: true,
+    autoplaySpeed: 2000,
+  });
+
+  var $footerSlide = $('.footer .footer__partners .slider');
+  $footerSlide.slick({
+    arrows: false,
+    infinite: true,
+    speed: 400,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1620,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+
+  });
+  $('.footer .controller .prev').click(function() {
+    $footerSlide.slick('slickPrev');
+  });
+  $('.footer .controller .next').click(function() {
+    $footerSlide.slick('slickNext');
+  });
+  $('.footer .controller .stop').click(function() {
+    $(this).hide();
+    $('.footer .controller .play').show();
+    $mainVisualSlider.slick('slickPause');
+  });
+  $('.footer .controller .play').click(function() {
+    $(this).hide();
+    $('.footer .controller .stop').show();
+    $mainVisualSlider.slick('slickPlay');
+  });
 
 
 
   $(window).scroll(function(){
     var h = $(this).scrollTop();
-    var isScrolled = h > 0;
+    var isScrolled = h > 40;
     if(isScrolled) {
       $('body').addClass('scrolled');
     } else {

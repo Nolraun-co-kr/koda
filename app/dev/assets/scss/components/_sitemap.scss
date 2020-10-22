@@ -5,6 +5,7 @@
   width: 100%;
   display: none;
   padding-bottom: 50px;
+  z-index: 6000;
   @media screen and (max-width: 1620px) {
     display: none !important;
   }

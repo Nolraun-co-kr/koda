@@ -1,0 +1,317 @@
+
+.footer {
+  border-top: 1px solid #ddd;
+}
+.footer__partners {
+  .wrap {
+    position: relative;
+    padding-right: 140px;
+    @media screen and (max-width: 1620px) {
+      padding-right: 110px;
+    }
+    @media screen and (max-width: 768px) {
+
+    }
+  }
+  .slider {
+    flex: 1;
+  }
+  .footer__partners-item {
+    height: 100px;
+    @apply flex items-center;
+    display: flex !important;
+    @media screen and (max-width: 1620px) {
+      height: 80px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 70px;
+    }
+  }
+
+  .controller {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    @apply flex ml-auto;
+    border: 1px solid #ddd;
+    width: 122px;
+    flex: none;
+    @media screen and (max-width: 1620px) {
+      width: 92px;
+    }
+    @media screen and (max-width: 768px) {
+
+    }
+    button {
+      height: 40px;
+      width: 40px;
+      & ~ button {
+        border-left: 1px solid #ddd;
+      }
+      @media screen and (max-width: 1620px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .prev {
+      background: url('../images/controller-prev.png') no-repeat center;
+    }
+    .stop {
+      background: url('../images/controller-stop.png') no-repeat center;
+    }
+    .next {
+      background: url('../images/controller-next.png') no-repeat center;
+    }
+  }
+}
+
+.footer__middle {
+  background:#eeeeee;
+  border-top: 3px solid #20b1a8;
+  position:relative;
+  @media screen and (max-width: 1620px) {
+    border-width: 2px 0 0 0;
+  }
+  @media screen and (max-width: 768px) {
+
+  }
+  &:after {
+    position: absolute;
+    content :'';
+    display: block;
+    height: 80px;
+    width: 50%;
+    left: 0;
+    top: 0;
+    background:#b0c4a5;
+    z-index: 1;
+    @media screen and (max-width: 1620px) {
+      height: 65px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 50px;
+    }
+  }
+  .wrap {
+    @apply flex relative;
+    z-index: 2;
+    @media screen and (max-width: 1620px) {
+
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .flex {
+      flex: 1;
+      display: flex;
+      @media screen and (max-width: 550px) {
+        flex-direction: column;
+        padding: 0;
+      }
+      .col {
+        flex: 1;
+        a {
+          display: block;
+          text-align: center;
+          line-height: 80px;
+          @media screen and (max-width: 1620px) {
+            line-height: 65px;
+          }
+          @media screen and (max-width: 768px) {
+            line-height: 50px;
+          }
+          span {
+            display:inline-block;
+            line-height: 80px;
+            color:#fff;
+            font-size: 20px;
+            @media screen and (max-width: 1620px) {
+              line-height: 65px;
+              font-size: 18px;
+            }
+            @media screen and (max-width: 768px) {
+              line-height: 50px;
+              font-size: 16px;
+            }
+          }
+        }
+        &:first-child {
+          a {
+            background:#b0c4a5;
+          }
+          span {
+            background: url('../images/footer-mid1.png') no-repeat left center;
+            padding-left: 50px;
+            @media screen and (max-width: 768px) {
+              background-size: auto 20px !important;
+              padding-left: 35px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          a {
+            background:#a59fba;
+          }
+          span {
+            background: url('../images/footer-mid2.png') no-repeat left center;
+            padding-left: 50px;
+            @media screen and (max-width: 768px) {
+              background-size: auto 20px !important;
+              padding-left: 35px;
+            }
+          }
+        }
+      }
+    }
+
+    .family {
+      width: 300px;
+      flex: none;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      label {
+        width: 100%;
+        line-height: 80px;
+        background: none;
+        text-align: center;
+        display: block;
+        @media screen and (max-width: 1620px) {
+          line-height: 65px;
+          font-size: 18px;
+        }
+        @media screen and (max-width: 768px) {
+          line-height: 50px;
+          font-size: 16px;
+        }
+        span {
+          font-size: 20px;
+          padding-right: 20px;
+          background: url('../images/family-arrow.png') no-repeat right center;
+          @media screen and (max-width: 1620px) {
+            font-size: 18px;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+            padding-right: 18px;
+            background-size: auto 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer__bottom {
+  background:#f5f5f5;
+  @media screen and (max-width: 1620px) {
+
+  }
+  @media screen and (max-width: 768px) {
+
+  }
+  .wrap {
+    padding: 50px 10px;
+    @apply flex items-start;
+    @media screen and (max-width: 1620px) {
+      @apply justify-center;
+      padding: 40px 10px;
+    }
+    @media screen and (max-width: 768px) {
+      @apply flex-col items-center;
+      padding: 30px 10px;
+    }
+  }
+  .flex {
+    @media screen and (max-width: 1620px) {
+      @apply flex-col items-center;
+      flex: none;
+    }
+  }
+  .logo {
+    margin-right: 60px;
+    flex: none;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      margin-bottom: 20px;
+      img {
+        height: 50px;
+      }
+    }
+  }
+  .marks {
+    @apply flex self-end;
+    @media screen and (max-width: 1620px) {
+      @apply self-start;
+      margin-left: -5px;
+      margin-top: 1rem;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      margin-top: 1rem;
+      @apply self-center;
+    }
+    span ~ span {
+      margin-left: 5px;
+    }
+  }
+  .footer-info {
+    flex: 1;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+    .links {
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+      a {
+        font-weight: 600;
+        font-size: 18px;
+        margin-right: 1rem;
+        @media screen and (max-width: 1620px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    p {
+      margin-top: 1.5rem;
+      word-break: keep-all;
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+    .addr {
+      margin-top: 10px;
+      @apply flex;
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+        @apply justify-center ;
+
+        span{
+          font-size: 12px;
+        }
+        span ~ span {
+          margin-left: .5em;
+        }
+      }
+      span ~ span {
+        margin-left: 1rem;
+      }
+      strong {
+        color:#1eb1a9;
+      }
+    }
+  }
+
+}

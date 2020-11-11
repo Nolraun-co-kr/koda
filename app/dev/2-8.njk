@@ -1,0 +1,119 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="sub memorial">
+        <div class="sub__visual">
+            <div class="sub__pagename">
+                <div class="wrap">
+                    <h2>기증자 예우</h2>
+                    <p>누군가에게 새로운 생명을 선물한 당신, 잊지않고 기억하겠습니다.</p>
+                    <img class="img" src="./assets/images/sub-visual2.png" alt="">
+                </div>
+            </div>
+            <div class="sub__navigation">
+                <div class="wrap flex">
+                    <a href="/" class="home">홈</a>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">장기·조직 기증</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">장기·조직 기증</option>
+                        </select>
+                    </div>
+                    <a href="" class="link">기증희망등록 신청</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub__content">
+            <div class="wrap">
+                <div class="sub__header">
+                    <h2>기증 후 STORY</h2>
+                </div>
+                <div class="sub__tabs memorial">
+                    <a href="" class="">기증자 추모관</a>
+                    <a href="" class="">하늘나라 편지</a>
+                    <a href="" class="">수혜자 편지</a>
+                    <a href="" class="active">기증 후 스토리</a>
+
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">기증자 추모관</option>
+                            <option value="">하늘나라 편지</option>
+                            <option value="">하늘나라 편지</option>
+                            <option value="" selected>수혜자 편지</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="memorial__message">
+                    <div class="memorial__message-info memorial__message-info--story">
+                        <div class="imgbox">
+                            <p>
+                                KODA 코디네이터가 마지막까지 기증자와 함께 한
+                                나눔의 시간과 아름다운 이야기를 적는 공간입니다.
+                            </p>
+                        </div>
+                        <div class="infobox">
+                            <h2>기증 후 스토리 작성 시 확인하세요!</h2>
+                            <ul>
+                                <li>게시글 작성시 개인정보 표기는 자제해주시기 바랍니다.</li>
+                            </ul>
+
+                            <a href="" class="write-button mt-auto">
+                                <strong>이야기 쓰기</strong>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="memorial__search-form">
+                        <div class="select" style="margin:0;margin-right: 10px;">
+                            <select name="" id="">
+                                <option value="">전체</option>
+                            </select>
+                        </div>
+                        <div class="input name mobile-mt-10">
+                            <input type="text" placeholder="">
+                        </div>
+                        <button class="submit">검색하기</button>
+                    </div>
+
+                    <div class="memorial__message-list">
+                        {% for i in [1,1,1,1,2,2,2,2,2,2,2,2] %}
+                            <div class="item">
+                                <a href="">
+                                    <header>
+                                        <span class="count count--story">3893번째 편지</span>
+                                        <strong class="is_new">NEW</strong>
+                                    </header>
+                                    <h2 class="title">
+                                        보고싶다.
+                                    </h2>
+                                    <div class="info">
+                                        <div class="row">
+                                            <span>코디네이터</span>
+                                            <strong>김래원</strong>
+                                        </div>
+                                    </div>
+                                    <span class="foot">
+                                        <span>2020-10-19</span>
+                                        <span>조회 22</span>
+                                        <span>댓글 0</span>
+                                    </span>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    {% include './includes/pagination.njk' %}
+                    <div class="action-button">
+                        <a href="">이야기 쓰기</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

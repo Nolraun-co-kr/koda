@@ -1,0 +1,73 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="sub memorial">
+        <div class="sub__visual">
+            <div class="sub__pagename">
+                <div class="wrap">
+                    <h2>기증자 예우</h2>
+                    <p>누군가에게 새로운 생명을 선물한 당신, 잊지않고 기억하겠습니다.</p>
+                    <img class="img" src="./assets/images/sub-visual2.png" alt="">
+                </div>
+            </div>
+            <div class="sub__navigation">
+                <div class="wrap flex">
+                    <a href="/" class="home">홈</a>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">장기·조직 기증</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">장기·조직 기증</option>
+                        </select>
+                    </div>
+                    <a href="" class="link">기증희망등록 신청</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub__content">
+            <div class="wrap">
+                <div class="sub__header">
+                    <h2>기증자 추모 · 유가족 행사</h2>
+                </div>
+
+                <div class="memorial__message">
+                    <div class="memorial__write">
+                        <table>
+                            <colgroup>
+                                <col class="memorial__write-col1">
+                                <col class="memorial__write-col2">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>
+                                    <strong class="require">제목</strong>
+                                </th>
+                                <td>
+                                    <div class="flex">
+                                        <div class="input">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding: 10px 0;">
+                                    <textarea name="" id="" style="border: 1px solid #ddd;width: 100%;height: 300px;resize: none;">editor...</textarea>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-actions justify-center">
+                        <button class="btn submit">등록</button>
+                        <a href="" class="btn">취소</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

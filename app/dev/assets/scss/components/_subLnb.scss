@@ -1,0 +1,57 @@
+.sub__lnb {
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  background:#f4f5f6;
+  border: 1px solid #ddd;
+
+  @media screen and (max-width: 1800px) {
+    display: none;
+  }
+
+
+  .row {
+    &:last-child {
+      .link {
+        border-bottom: none;
+      }
+    }
+  }
+  .link {
+    font-size: 25px;
+    padding:0 30px;
+    line-height: 80px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    &.active {
+      background: #fd7e00 url('../images/lnb-link-arrow.png') no-repeat calc(100% - 30px) center;
+      color:#fff;
+
+      & + .depth {
+        display: block;
+      }
+    }
+  }
+  .depth {
+    background:#fff;
+    border-bottom: 1px solid #ddd;
+    display: none;
+  }
+  .depth-link {
+    display: block;
+    line-height: 60px;
+    background:#fff;
+    border-top: 1px solid #ddd;
+    &:first-child {
+      border-top: 0;
+    }
+    padding:0 30px;
+    font-size: 20px;
+    color:#666;
+    &.active {
+      color:#000;
+      font-weight: 600;
+    }
+  }
+}

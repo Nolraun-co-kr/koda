@@ -1,0 +1,31 @@
+.sub4 {
+
+  .sub4-imgbox {
+    margin: 4rem 0;
+
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    .flex-1 {
+      padding:10px;
+    }
+
+
+  }
+
+  .info-section {
+    .flex {
+      @media screen and (max-width: 768px) {
+        display: block;
+        .flex-1 {
+          margin: 0;
+
+          &:last-child {
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{% extends 'layout/base-email.njk' %}
+
+{% block content %}
+<div class="login">
+    <div class="content">
+        <img src="./assets/images/login-bg-img.png" alt="">
+        <div class="login__form">
+            <h2>생명나눔우체통 로그인</h2>
+
+            <div class="form">
+                <div class="input">
+                    <input type="text" placeholder="아이디">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="비밀번호">
+                </div>
+                <button class="submit">로그인</button>
+            </div>
+
+            <div class="etc">
+                <label for="saveId" class="checkbox">
+                    <input type="checkbox" hidden id="saveId">
+                    <span></span>
+                    <p>아이디 저장</p>
+                </label>
+
+                <div class="links">
+                    <a href="">아이디 찾기</a>
+                    <a href="">비밀번호 찾기</a>
+                    <a href="">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

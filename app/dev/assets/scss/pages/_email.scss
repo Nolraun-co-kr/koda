@@ -1,0 +1,129 @@
+.isMailbox {
+
+  .mheader {
+    background: linear-gradient(90deg, rgba(255,126,0,1) 0%, rgba(31,177,169,1) 100%);
+    @apply flex;
+
+    .right {
+      margin-left: auto;
+      @apply flex items-center;
+
+      a {
+        width: 80px;
+        height: 80px;
+        @apply flex items-center justify-center;
+        color:#fff;
+        & ~ a {
+          border-left: 1px solid #2d928c;
+        }
+
+        img {
+          max-height: 25px;
+        }
+      }
+    }
+    .left {
+      height: 80px;
+      padding:0 30px;
+      @apply flex items-center;
+      color:#fff;
+      a {
+        @apply flex items-center;
+        span {
+          margin-right: 1rem;
+        }
+      }
+
+      button {
+        margin-left: 1rem;
+        border: 1px solid #fff;
+        font-size: 16px;
+        line-height: 35px;
+        padding:0 1em;
+        border-radius: 2em;
+        transition: all .3s;
+        &:hover {
+          background: #fff;
+          color:#ff7e00;
+        }
+      }
+    }
+  }
+
+  .login {
+    position: relative;
+    .login__form {
+      width: 600px;
+      padding: 50px;
+      background:#fff;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 325px;
+      z-index: 10;
+
+      h2 {
+        font-size: 30px;
+        line-height: 1em;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+
+      .etc {
+        @apply flex items-center justify-between;
+        margin-top: 30px;
+
+        .links {
+          @apply flex items-center;
+
+          a {
+            border: 1px solid #ddd;
+            line-height: 30px;
+            width: 110px;
+            text-align: center;
+            font-size: 14px;
+            & ~ a {
+              margin-left: 10px;
+            }
+          }
+        }
+        .checkbox {
+          span {
+            width: 1.25em;
+            height: 1.25em;
+          }
+          input:checked + span {
+            background: #20b1a8 url('../images/checkbox-icon.png') no-repeat center;
+            background-size: auto 50%;
+          }
+        }
+      }
+
+      .form {
+        .submit {
+          width: 100%;
+          height: 60px;
+          font-size: 20px;
+          background:#20b1a8;
+          color:#fff;
+          margin-top: 10px;
+        }
+        .input {
+          height: 60px;
+          width: 100%;
+          border: 1px solid #ddd;
+          margin-bottom: 10px;
+          input {
+            width: 100%;
+            height: 100%;
+            padding:0 20px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+
+}

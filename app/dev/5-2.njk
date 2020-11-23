@@ -1,0 +1,91 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="sub promote">
+        <div class="sub__visual">
+            <div class="sub__pagename">
+                <div class="wrap">
+                    <h2>홍보·자료</h2>
+                    <p>한국장기조직기증원의 다양한 소식 및 자료</p>
+                    <img class="img" src="./assets/images/sub-visual5.png" alt="">
+                </div>
+            </div>
+            <div class="sub__navigation">
+                <div class="wrap flex">
+                    <a href="/" class="home">홈</a>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">홍보·자료</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">홍보 콘텐츠</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">웹콘텐츠</option>
+                        </select>
+                    </div>
+                    <a href="" class="link">기증희망등록 신청</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub__content">
+            {% include './layout/lnb.njk' %}
+            <div class="wrap">
+                <div class="sub__header">
+                    <h2>웹콘텐츠</h2>
+                </div>
+                <div class="promote__select flex ml-auto">
+                    <select name="" id="">
+                        <option value="">웹콘텐츠</option>
+                        <option value="">생명나눔 스토리</option>
+                    </select>
+                </div>
+                <div class="memorial__detail-content">
+                    <div class="promote__publication flex flex-wrap pr">
+                        {% for i in[
+                            1,
+                            1,
+                            1,
+                            1,
+                            2,
+                            2,
+                            2,
+                            2,
+                            2,
+                            2,
+                            2
+                        ] %}
+                            <div class="item">
+                                <a href="" class="inline-block">
+                                    <div class="imgBox">
+                                        <div class="img">
+                                            <img src="./assets/images/publication-bg2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="txtBox">
+                                        <div class="title">
+                                        닥터프렌즈와 함께하는 생생한 생명나눔 Story
+                                    </div>
+                                        <div class="date flex items-center">
+                                        2020-11-02
+                                        <span class="clip ml-auto">
+                                                <img src="./assets/images/clip.png" alt="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                {% include './includes/pagination.njk' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,133 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="sub information">
+        <div class="sub__visual">
+            <div class="sub__pagename">
+                <div class="wrap">
+                    <h2>정보공개</h2>
+                    <p>기증/이식 현황 등을 한눈에 보실 수 있습니다.</p>
+                    <img class="img" src="./assets/images/sub-visual6.png" alt="">
+                </div>
+            </div>
+            <div class="sub__navigation">
+                <div class="wrap flex">
+                    <a href="/" class="home">홈</a>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">정보공개</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">기증통계</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">기증희망등록 현황</option>
+                        </select>
+                    </div>
+                    <a href="" class="link">기증희망등록 신청</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub__content">
+            {% include './layout/lnb.njk' %}
+            <div class="wrap">
+                <div class="sub__header">
+                    <h2>기증희망등록 현황</h2>
+                </div>
+                <div class="info__content">
+                    <div class="subTit flex justify-between">
+                        <h3 class="flex items-center">
+                            기증희망등록 현황
+                        </h3>
+                        <div class="button">
+                            <a href="" class="heart flex">
+                                <i></i>
+                                기증희망등록 신청
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scrollbox2">
+                        <div class="table infoTable border-orange thin border-b-orange">
+                            <table>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">연도</th>
+                                        <th rowspan="2">누계</th>
+                                        <th colspan="3">뇌사장기기증 희망</th>
+                                        <th colspan="3">조직기증 희망</th>
+                                        <th rowspan="2" class="light-orange">연간등록수</th>
+                                    </tr>
+                                    <tr>
+                                        <th>누계</th>
+                                        <th>사망/취소</th>
+                                        <th>등록</th>
+                                        <th>누계</th>
+                                        <th>사망/취소</th>
+                                        <th>등록</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="font-bold">2019</td>
+                                        <td class="font-bold">450</td>
+                                        <td class="font-bold">794</td>
+                                        <td class="font-bold">391</td>
+                                        <td class="font-bold">75</td>
+                                        <td class="font-bold">194</td>
+                                        <td class="font-bold">157</td>
+                                        <td class="font-bold">1</td>
+                                        <td class="font-bold bg-orange orange">1,804</td>
+                                    </tr>
+                                    {% for i in[
+                                        1,
+                                        2,
+                                        3,
+                                        4,
+                                        5,
+                                        6,
+                                        7,
+                                        1,
+                                        2,
+                                        3,
+                                        4,
+                                        5,
+                                        6,
+                                        7
+                                    ] %}
+                                        <tr>
+                                            <td>2018</td>
+                                            <td>449</td>
+                                            <td>111</td>
+                                            <td>222</td>
+                                            <td>222</td>
+                                            <td>33</td>
+                                            <td>44</td>
+                                            <td>555</td>
+                                            <td class="bg-orange orange">44</td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

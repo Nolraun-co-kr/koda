@@ -1,0 +1,102 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="sub promote">
+        <div class="sub__visual">
+            <div class="sub__pagename">
+                <div class="wrap">
+                    <h2>기증자 예우</h2>
+                    <p>누군가에게 새로운 생명을 선물한 당신, 잊지않고 기억하겠습니다.</p>
+                    <img class="img" src="./assets/images/sub-visual2.png" alt="">
+                </div>
+            </div>
+            <div class="sub__navigation">
+                <div class="wrap flex">
+                    <a href="/" class="home">홈</a>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">홍보·자료</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">홍보 콘텐츠</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">웹콘텐츠</option>
+                        </select>
+                    </div>
+                    <a href="" class="link">기증희망등록 신청</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub__content">
+            {% include './layout/lnb.njk' %}
+            <div class="wrap">
+                <div class="sub__header">
+                    <h2>기증자 추모 · 유가족 행사</h2>
+                </div>
+                <div class="promote__select flex ml-auto">
+                    <select name="" id="">
+                        <option value="">웹콘텐츠</option>
+                        <option value="">생명나눔 스토리</option>
+                    </select>
+                </div>
+                <div class="memorial__detail-content file-type">
+                    <header>
+                        <h3 class="title">
+                            닥터프렌즈와 함께하는 생생한 생명나눔 Story 
+                        </h3>
+                        <div class="info">
+                            <div class="col">
+                                <strong>웹콘텐츠</strong>
+                            </div>
+                            <div class="col">
+                                등록일 <strong>2020-10-19</strong>
+                            </div>
+                            <div class="col">
+                                조회수 <strong>104</strong>
+                            </div>
+                        </div>
+                        <div class="attachFile flex items-center">
+                            <span class="inline-block">첨부파일</span>
+                            <a href="">의료진 대상 포스터.jpg</a>
+                        </div>
+                    </header>
+
+                    <div class="memorial__detail-body">
+
+                        <!-- content 입력 -->
+                        <div class="content flex items-center flex-col">
+                            <img src="./assets/images/promote-webcontents.png" alt="">
+                        </div>
+
+                        <div class="content-next-prev">
+                            <div class="col prev">
+                                <a href="">
+                                    <span>이전글</span>
+                                    <p>
+                                         해피너스 7기(한국장기조직기증원 간호대 봉사단)
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col next">
+                                <a href="">
+                                    <span>다음글</span>
+                                    <p>
+                                        다음 글이 없습니다.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions justify-center">
+                    <a href="" class="submit btn">목록보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

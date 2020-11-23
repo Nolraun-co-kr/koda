@@ -1,0 +1,69 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="sub promote">
+        <div class="sub__visual">
+            <div class="sub__pagename">
+                <div class="wrap">
+                    <h2>기증자 예우</h2>
+                    <p>누군가에게 새로운 생명을 선물한 당신, 잊지않고 기억하겠습니다.</p>
+                    <img class="img" src="./assets/images/sub-visual2.png" alt="">
+                </div>
+            </div>
+            <div class="sub__navigation">
+                <div class="wrap flex">
+                    <a href="/" class="home">홈</a>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">홍보·자료</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">기관소식</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">기관소식</option>
+                        </select>
+                    </div>
+                    <a href="" class="link">기증희망등록 신청</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub__content">
+            {% include './layout/lnb.njk' %}
+            <div class="wrap">
+                <div class="sub__header">
+                    <h2>기관소식</h2>
+                </div>
+                <div class="memorial__detail-content">
+                    <header>
+                        <h3 class="title">
+                            한국프로축구연맹 기증활성화 협약식
+                        </h3>
+                        <div class="info">
+                            <div class="col">
+                                일시 <strong>2020-10-19 - 2020-11-20</strong>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="memorial__detail-body border-type">
+
+                        <!-- content 입력 -->
+                        <div class="content" style="white-space: pre-line;line-height:1.5em;">- 내용 : 한국장기조직기증원-질병관리본부 장기이식관리센터-한국프로축구연맹 기증활성화 업무 협약식
+                            - 일시 : 2018. 2. 25(화) 13:30
+                            - 장소 : 한국장기조직기증원 본사 중회의실
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-actions justify-center">
+                    <a href="" class="submit btn">목록보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="sub promote">
+        <div class="sub__visual">
+            <div class="sub__pagename">
+                <div class="wrap">
+                    <h2>기증자 예우</h2>
+                    <p>누군가에게 새로운 생명을 선물한 당신, 잊지않고 기억하겠습니다.</p>
+                    <img class="img" src="./assets/images/sub-visual2.png" alt="">
+                </div>
+            </div>
+            <div class="sub__navigation">
+                <div class="wrap flex">
+                    <a href="/" class="home">홈</a>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">홍보·자료</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">영상자료실</option>
+                        </select>
+                    </div>
+                    <a href="" class="link">기증희망등록 신청</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub__content">
+            {% include './layout/lnb.njk' %}
+            <div class="wrap">
+                <div class="sub__header">
+                    <h2>영상자료실</h2>
+                </div>
+                <div class="memorial__detail-content">
+                    <header>
+                        <h3 class="title">
+                            제 나이는 5살입니다. 생명나눔에 감사함을 전하는 수혜자
+                        </h3>
+                        <div class="info">
+                            <div class="col">
+                                <strong>영상자료실</strong>
+                            </div>
+                            <div class="col">
+                                등록일 <strong>2020-10-19</strong>
+                            </div>
+                            <div class="col">
+                                조회수 <strong>104</strong>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="memorial__detail-body">
+
+                        <!-- content 입력 -->
+                        <div class="content">
+                            <div class="video-area">
+                                <iframe src="https://www.youtube.com/embed/k4pSOMK6zp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="promote__publication flex flex-wrap pr border-type">
+                                {% for i in[
+                                    1,
+                                    1,
+                                    1,
+                                    1,
+                                    2,
+                                    2,
+                                    2,
+                                    2,
+                                    2,
+                                    2,
+                                    2
+                                ] %}
+                                    <div class="item">
+                                        <a href="" class="inline-block">
+                                            <div class="imgBox relative">
+                                                <div class="img">
+                                                    <img src="./assets/images/publication-bg4.png" alt="">
+                                                </div>
+                                                <div class="button absolute video">
+                                                    <img src="./assets/images/play.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="txtBox">
+                                                <div class="title">
+                                        닥터프렌즈와 함께하는 생생한 생명나눔 Story
+                                    </div>
+                                                <div class="date">2020-11-02</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-actions justify-center">
+                    <a href="" class="submit btn">목록보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

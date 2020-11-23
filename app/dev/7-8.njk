@@ -1,0 +1,93 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="sub company">
+        <div class="sub__visual">
+            <div class="sub__pagename">
+                <div class="wrap">
+                    <h2>KODA</h2>
+                    <p>장기·조직 기증 활성화를 통한 생명나눔 가치 실현</p>
+                    <img class="img" src="./assets/images/sub-visual7.png" alt="">
+                </div>
+            </div>
+            <div class="sub__navigation">
+                <div class="wrap flex">
+                    <a href="/" class="home">홈</a>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">KODA</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">인권경영</option>
+                        </select>
+                    </div>
+                    <a href="" class="link">기증희망등록 신청</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub__content">
+            {% include './layout/lnb.njk' %}
+            <div class="wrap">
+                <div class="sub__header">
+                    <h2>인권경영</h2>
+                </div>
+                <div class="company__content company__management">
+                    <div class="categoryBtn flex">
+                        <a href="">인권경영 선언문(CEO 메시지)</a>
+                        <a href="">인권경영규범</a>
+                        <a href="" class="active">인권경영 게시판</a>
+                    </div>
+                    <div class="memorial__search-form mb-8">
+                        <div class="select" style="margin:0;margin-right: 10px;">
+                            <select name="" id="">
+                                <option value="">전체</option>
+                            </select>
+                        </div>
+                        <div class="input name mobile-mt-10">
+                            <input type="text" placeholder="">
+                        </div>
+                        <button class="submit">검색하기</button>
+                    </div>
+                    <div class="memorial__detail-content">
+                        <div class="table promote__table effectNone">
+                            <table>
+                                <colgroup>
+                                    <col class="col1">
+                                    <col class="col">
+                                    <col class="col3">
+                                    <col class="col4">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>등록일</th>
+                                        <th>조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <a href="">
+                                                2020년 인권영향평가 결과 보고서 및 인권경영 추진 최종보고서 
+                                            </a>
+                                        </td>
+                                        <td>2020-10-06</td>
+                                        <td>24</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    {% include './includes/pagination.njk' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

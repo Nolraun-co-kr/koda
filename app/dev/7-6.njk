@@ -1,0 +1,50 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="sub company">
+        <div class="sub__visual">
+            <div class="sub__pagename">
+                <div class="wrap">
+                    <h2>KODA</h2>
+                    <p>장기·조직 기증 활성화를 통한 생명나눔 가치 실현</p>
+                    <img class="img" src="./assets/images/sub-visual7.png" alt="">
+                </div>
+            </div>
+            <div class="sub__navigation">
+                <div class="wrap flex">
+                    <a href="/" class="home">홈</a>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">KODA</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">인권경영</option>
+                        </select>
+                    </div>
+                    <a href="" class="link">기증희망등록 신청</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub__content">
+            {% include './layout/lnb.njk' %}
+            <div class="wrap">
+                <div class="sub__header">
+                    <h2>인권경영</h2>
+                </div>
+                <div class="company__content company__management">
+                    <div class="categoryBtn flex">
+                        <a href="" class="active">인권경영 선언문(CEO 메시지)</a>
+                        <a href="">인권경영규범</a>
+                        <a href="">인권경영 게시판</a>
+                    </div>
+                    <div class="cont">
+                        <div class="row"><img src="./assets/images/statement.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

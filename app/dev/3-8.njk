@@ -1,0 +1,70 @@
+{% extends 'layout/base-email.njk' %}
+
+{% block content %}
+    <div class="esignup">
+        <div class="wrap">
+            <h2 class="e-title">기증자 가족 회원가입</h2>
+            <div class="esignup__process">
+                <div class="col">
+                    <div class="icon">
+                        <img src="./assets/images/eprocess-1.png" alt="">
+                    </div>
+                    <p>회원구분</p>
+                </div>
+                <div class="col">
+                    <div class="icon">
+                        <img src="./assets/images/eprocess-2.png" alt="">
+                    </div>
+                    <p>회원선택</p>
+                </div>
+                <div class="col">
+                    <div class="icon">
+                        <img src="./assets/images/eprocess-3.png" alt="">
+                    </div>
+                    <p>약관동의</p>
+                </div>
+                <div class="col">
+                    <div class="icon">
+                        <img src="./assets/images/eprocess-4.png" alt="">
+                    </div>
+                    <p>본인인증</p>
+                </div>
+                <div class="col">
+                    <div class="icon">
+                        <img src="./assets/images/eprocess-5.png" alt="">
+                    </div>
+                    <p>정보입력</p>
+                </div>
+                <div class="col">
+                    <div class="icon">
+                        <img src="./assets/images/eprocess-6-active.png" alt="">
+                    </div>
+                    <p>가입완료</p>
+                </div>
+            </div>
+            <div class="esignup-complete">
+                <h1>
+                    <strong>홍길동</strong> 님의 <strong style="color: #ff7e00;">수혜자 가족</strong> 회원가입을 환영합니다.
+                </h1>
+                <p>
+                    입력하신 정보는 아래와 같습니다.<br/>
+                    타인에게 노출되지 않도록 주의하시기 바랍니다.
+                </p>
+                <div>
+                    <p>
+                        이름 <strong>홍길동</strong>
+                    </p>
+                    <p>
+                        아이디 <strong>abcde</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="actions mt-12">
+                <a href="" class="black">메인으로</a>
+                <a href="" style="background:#ff7e00">로그인</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

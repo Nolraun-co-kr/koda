@@ -1,0 +1,33 @@
+{% extends 'layout/base-email.njk' %}
+
+{% block content %}
+    <div class="esignup">
+        <div class="wrap">
+            <h2 class="e-title">내 정보</h2>
+            <p class="e-desciption">
+                본인확인을 위해 비밀번호를 한번 더 입력해 주세요.<br/>
+                회원님의 정보를 안전하게 보호하기 위해 비밀번호를 한번 더 확인합니다.
+            </p>
+
+            <div class="e-form mt-8">
+                <div class="row">
+                    <h3>생명나눔 우체통 아이디</h3>
+                    <div>
+                        <p>abcdefg</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>비밀번호</h3>
+                    <div>
+                        <input type="password" placeholder="비밀번호 입력" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions mt-12">
+                <a href="" class="green">확인</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

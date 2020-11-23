@@ -1,0 +1,249 @@
+{% extends 'layout/base-email.njk' %}
+
+{% block content %}
+    <div class="esignup">
+        <div class="wrap">
+            <h2 class="e-title">내 정보</h2>
+
+            <div class="esignup-form-section">
+                <h2>내 정보 관리</h2>
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col class="form-col1">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th>아이디</th>
+                            <td>hongildong23</td>
+                        </tr>
+                        <tr>
+                            <th>이름</th>
+                            <td>홍길동</td>
+                        </tr>
+                        <tr>
+                            <th>닉네임</th>
+                            <td>
+                                <div class="row">
+                                    <div class="input">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <p style="color:#ff7e00;"> *개인정보 유출 가능성이 있는 닉네임은 사용 불가능합니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>
+                            <td>
+                                <div class="row">
+                                    <div class="input">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호 확인</th>
+                            <td>
+                                <div class="row">
+                                    <div class="input">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>주소</th>
+                            <td>
+                                <div class="row">
+                                    <div class="input"><input type="text" placeholder=""></div>
+                                    <button>우편번호 검색</button>
+                                </div>
+                                <div class="row">
+                                    <div class="input"><input type="text" placeholder=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="input"><input type="text" placeholder=""></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>휴대전화번호</th>
+                            <td>
+                                <div class="row">
+                                    <p>010-2222-3333</p>
+                                    <a href="" class="btn">휴대전화번호 변경</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>
+                                <div class="row">
+                                    <div class="input"><input type="text" placeholder=""></div>
+                                    <span class="mx-4">@</span>
+                                    <div class="select">
+                                        <select name="" id="">
+                                            <option value="">직접입력</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input"><input type="text" placeholder=""></div>
+                                    <span class="mx-4">@</span>
+                                    <div class="select">
+                                        <select name="" id="">
+                                            <option value="">직접입력</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p style="color:#ff7e00;">※ 이메일 한가지는 필수입력</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>생년월일</th>
+                            <td>
+                                <div class="row">
+                                    <p>1991-11-11</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이메일 수신</th>
+                            <td>
+                                <div class="row">
+                                    <label for="area1" class="radio mr-6">
+                                        <input type="radio" name="area" id="area1" hidden checked>
+                                        <span></span>
+                                        <p>동의</p>
+                                    </label>
+                                    <label for="area2" class="radio">
+                                        <input type="radio" name="area" id="area2" hidden>
+                                        <span></span>
+                                        <p>거부</p>
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>SMS 수신</th>
+                            <td>
+                                <div class="row">
+                                    <label for="area1" class="radio mr-6">
+                                        <input type="radio" name="area" id="area1" hidden checked>
+                                        <span></span>
+                                        <p>동의</p>
+                                    </label>
+                                    <label for="area2" class="radio">
+                                        <input type="radio" name="area" id="area2" hidden>
+                                        <span></span>
+                                        <p>거부</p>
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="esignup-form-section mt-12">
+                <h2>보호자 동의</h2>
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col class="form-col1">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th>보호자 이름</th>
+                            <td>홍길동</td>
+                        </tr>
+                        <tr>
+                            <th>보호자 생년월일</th>
+                            <td>
+                                <div class="row">
+                                    <p>1991-11-11</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>보호자 성별</th>
+                            <td>
+                                <div class="row">
+                                    <p>남성</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>휴대전화번호</th>
+                            <td>
+                                <div class="row">
+                                    <p>010-2222-3333</p>
+                                    <a href="" class="btn">휴대전화번호 변경</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="esignup-form-section mt-12">
+                <h2>기증자 정보</h2>
+                <div class="table table--rsv">
+                    <table>
+                        <colgroup>
+                            <col class="form-col1">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th>기증자 이름</th>
+                            <td>홍길동</td>
+                        </tr>
+                        <tr>
+                            <th>기증병원</th>
+                            <td>
+                                <div class="row">
+                                    <p>1991-11-11</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>기증일</th>
+                            <td>
+                                <div class="row">
+                                    <p>2020-11-11</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>생년월일</th>
+                            <td>
+                                <div class="row">
+                                    <p>010-2222-3333</p>
+                                </div>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <div class="actions mt-12">
+                <a href="" class="black">수정하기</a>
+                <a href="">취소</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

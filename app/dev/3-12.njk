@@ -1,0 +1,73 @@
+{% extends 'layout/base-email.njk' %}
+
+{% block content %}
+    <div class="emailcontainer">
+        <div class="email__lnb">
+            <div class="top">편지쓰기</div>
+            <a href="" class="active">
+                받은편지함 <strong>2</strong>
+            </a>
+            <a href="">
+                안읽은 편지함
+            </a>
+            <a href="">보낸편지함</a>
+            <a href="">임시보관함</a>
+        </div>
+        <div class="email__content">
+            <div class="top">
+                <div class="top__actions">
+                    <a href="" class="action submit">보내기</a>
+                    <a href="" class="action">임시저장</a>
+                </div>
+                <div class="search" style="margin-left: 10px;">
+                    <input type="text" placeholder="메일 검색">
+                    <button><img src="./assets/images/search-icon.png" alt=""></button>
+                </div>
+            </div>
+
+            <div class="emailwrite">
+                <div class="section">
+                    <div class="row">
+                        <h3>받는사람</h3>
+                        <div>
+                            <p>기증자(또는 수혜자)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="row">
+                        <h3>제목</h3>
+                        <div>
+                            <p>안녕하세요. 이렇게나마 연락을 주고 받을 수 있어 행복합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="row">
+                        <h3>파일첨부 #1</h3>
+                        <div>
+                            <input type="file">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>파일첨부 #2</h3>
+                        <div>
+                            <input type="file">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>파일첨부 #3</h3>
+                        <div>
+                            <input type="file">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <textarea name="" id=""></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -468,7 +468,7 @@
     border: 1px solid #ddd;
     select {
       color: #333;
-      background: url("../images/prs-arrow-bottom.png") no-repeat
+      background: url("../images/selec-arrow.png") no-repeat
         calc(100% - 15px) center;
     }
     @media screen and (max-width: 1200px) {
@@ -876,6 +876,116 @@
     overflow-x: auto;
     .table {
       min-width: 879px;
+    }
+  }
+}
+
+
+.barChart6 {
+  .unit {
+    font-size: 16px;
+    margin-bottom: 10px;
+    @media screen and (max-width: 1220px) {
+      font-size: 14px;
+    }
+  }
+  .status {
+    @apply flex flex-wrap;
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+    @media screen and (max-width: 1220px) {
+      margin-bottom: 30px;
+    }
+    .col {
+      flex: 1;
+      text-align: center;
+      padding: 30px 20px;
+      & ~ .col {
+        border-left: 1px solid #ddd;
+        @media screen and (max-width: 1220px) {
+          border: 0;
+        }
+      }
+      @media screen and (max-width: 1220px) {
+        padding: 20px 10px;
+        width: 50%;
+        flex: none;
+        border: 0;
+        &:nth-child(2n) {
+          border-left: 1px solid #ddd;
+        }
+        &:nth-child(n + 3) {
+          border-top: 1px solid #ddd;
+        }
+      }
+      header {
+        font-size: 18px;
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+
+        strong {
+          font-size: 24px;
+          font-weight: 600;
+          margin-left: 10px;
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+      }
+      .progress {
+        background:#eeeeee;
+        height: 20px;
+        border-radius: 2em;
+        margin: 1em 0;
+        overflow: hidden;
+        @media screen and (max-width: 768px) {
+          height: 15px;
+        }
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .type1 {
+      strong {
+        color:#ea4c57;
+      }
+      .progress span {
+        background:#ea4c57;
+        height: 100%;
+        display: block;
+      }
+    }
+    .type2 {
+      strong {
+        color:#4aa179;
+      }
+      .progress span {
+        background:#4aa179;
+        height: 100%;
+        display: block;
+      }
+    }
+    .type3 {
+      strong {
+        color:#2e81b1;
+      }
+      .progress span {
+        background:#2e81b1;
+        height: 100%;
+        display: block;
+      }
+    }
+    .type4 {
+      strong {
+        color:#ff7e00;
+      }
+      .progress span {
+        background:#ff7e00;
+        height: 100%;
+        display: block;
+      }
     }
   }
 }

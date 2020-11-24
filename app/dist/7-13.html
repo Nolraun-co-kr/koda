@@ -24,9 +24,9 @@
         <div class="logo">
             <img src="./assets/images/header-message-logo.png" alt="">
         </div>
-        <p class="text font-myeongjo">
+        <Marquee class="text font-myeongjo">
             “지금 우리의 헤어짐이 영원한 이별이 아닌 잠시 동안 작별이라 생각하고 그리움은 간직하겠지만 슬픔은 잊어볼게 언니야 사랑해”..........
-        </p>
+        </Marquee>
         <span class="author font-myeongjo">추모자 : 한**</span>
     </div>
 </div>
@@ -628,7 +628,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab__item" id="tab2">
+                        <div class="tab__item" hidden id="tab2">
                             <div class="map-area">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1324.6667702704335!2d126.90663863564187!3d35.16381413975079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c609e6015c3%3A0x730c55400e167ec1!2z6rSR7KO86rSR7Jet7IucIOu2geq1rCDsi6DslYjrj5kg7YOc67SJ66GcIDgz!5e0!3m2!1sko!2skr!4v1606089871200!5m2!1sko!2skr"></iframe>
                             </div>
@@ -649,7 +649,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab__item" id="tab3">
+                        <div class="tab__item" hidden id="tab3">
                             <div class="map-area">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.5478879785755!2d129.0400294157989!3d35.11799871826056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbc1503f08f2cd194!2z64yA64-Z67mM65Sp!5e0!3m2!1sko!2skr!4v1606089960822!5m2!1sko!2skr"></iframe>
                             </div>
@@ -670,7 +670,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab__item" id="tab4">
+                        <div class="tab__item" hidden id="tab4">
                             <div class="map-area">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6431.3461515422905!2d127.33051037838423!3d36.295981617352474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654d0b8197b5a1%3A0x2aa4e440850d7d6c!2z64yA7KCE6rSR7Jet7IucIOyEnOq1rCDqtIDsoIAy64-ZIOq1rOu0ieyCsOu2geuhnA!5e0!3m2!1sko!2skr!4v1606090062041!5m2!1sko!2skr"></iframe>
                             </div>
@@ -691,7 +691,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab__item" id="tab5">
+                        <div class="tab__item" hidden id="tab5">
                             <div class="map-area">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1799.8510829059608!2d128.60391072315034!3d35.87329683075555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e3d6adfeca4d%3A0xbead74bec28a866f!2z7IK87Iq57IqI7Y287YOA7JuM7JWE7YyM7Yq4!5e0!3m2!1sko!2skr!4v1606090116491!5m2!1sko!2skr"></iframe>
                             </div>
@@ -712,7 +712,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab__item" id="tab6">
+                        <div class="tab__item" hidden id="tab6">
                             <div class="map-area">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.7078172596007!2d126.96228091583906!3d37.56194713214769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca27d56905cdd%3A0x2b72059ef6941b88!2z6rWt66-87Jew6riI6rO164uoIOyEnOyauOu2geu2gOyngOyXreuzuOu2gA!5e0!3m2!1sko!2skr!4v1606090165891!5m2!1sko!2skr"></iframe>
                             </div>
@@ -940,6 +940,18 @@
 <script src="./assets/plugins/slick/slick.js"></script>
 <script src="./assets/js/ui.js"></script>
 
+    <script>
+        $(function(){
+          $('.categoryBtn a').on('click', function(e){
+            e.preventDefault();
+            $('.categoryBtn a').removeClass('active');
+            $(this).addClass('active');
+            var value = $(this).data('tab');
+            $('.tab__item').hide();
+            $('#'+value).stop().fadeIn();
+          })
+        })
+    </script>
 
 </body>
 </html>

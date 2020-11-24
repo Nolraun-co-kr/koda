@@ -1,0 +1,233 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="sub sub1">
+        <div class="sub__visual">
+            <div class="sub__pagename">
+                <div class="wrap">
+                    <h2>장기·조직 기증</h2>
+                    <p>누군가의 끝이 아니라 누군가의 시작</p>
+                    <img class="img" src="./assets/images/sub-visual1.png" alt="">
+                </div>
+            </div>
+            <div class="sub__navigation">
+                <div class="wrap flex">
+                    <a href="/" class="home">홈</a>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">장기·조직 기증</option>
+                        </select>
+                    </div>
+                    <div class="select select--depth">
+                        <select name="" id="">
+                            <option value="">장기·조직 기증</option>
+                        </select>
+                    </div>
+                    <a href="" class="link">기증희망등록 신청</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="sub__content">
+            <div class="wrap">
+                <div class="sub__header">
+                    <h2>뇌사장기기증자 관리업무 협약</h2>
+                </div>
+
+                <div class="sub__tabs">
+                    <a href="">뇌사장기기증자 관리업무 협약이란</a>
+                    <a href="" class="active">뇌사판정의료기관 현황</a>
+
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">뇌사장기기증자 관리업무 협약이란</option>
+                            <option value="">뇌사판정의료기관 현황</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="areatab">
+
+                    <a href="#//" class="active" data-id="1">전국</a>
+                    <a href="#//" data-id="2">중부권역</a>
+                    <a href="#//" data-id="3">충청·호남권역</a>
+                    <a href="#//" data-id="4">영남권역</a>
+                </div>
+                <div class="content">
+                    <div class="areaView">
+                        <div class="view view1">
+                            <div class="box">
+                                <div class="map">
+                                    <img src="./assets/images/11-map1.png" alt="">
+                                </div>
+                                <div class="list">
+                                    <div class="table">
+                                        <button class="active">
+                                            <h3>중부권역</h3>
+                                            <span></span>
+                                        </button>
+                                        <div class="tbox">
+                                            <table class="active">
+                                                <tbody>
+                                                {% for i in [1,2,3,1,2,3,1,2,3,1,2,3] %}
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <td>가톨릭대학교 인천성모병원</td>
+                                                    </tr>
+                                                {% endfor %}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="table type2">
+                                        <button>
+                                            <h3>충청·호남권역</h3>
+                                            <span></span>
+                                        </button>
+                                        <div class="tbox">
+                                            <table>
+                                                <tbody>
+                                                {% for i in [1,2,3,1,2,3,1,2,3,1,2,3] %}
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <td>가톨릭대학교 인천성모병원</td>
+                                                    </tr>
+                                                {% endfor %}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="table type3">
+                                        <button>
+                                            <h3>영남권역</h3>
+                                            <span></span>
+                                        </button>
+                                        <div class="tbox">
+                                            <table>
+                                                <tbody>
+                                                {% for i in [1,2,3,1,2,3,1,2,3,1,2,3] %}
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <td>가톨릭대학교 인천성모병원</td>
+                                                    </tr>
+                                                {% endfor %}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="view view2" style="display: none;">
+                            <div class="box">
+                                <div class="map">
+                                    <img src="./assets/images/11-map2.png" alt="">
+                                </div>
+                                <div class="list">
+                                    <div class="table">
+                                        <button class="active">
+                                            <h3>중부권역</h3>
+                                            <span></span>
+                                        </button>
+                                        <div class="tbox">
+                                            <table class="active">
+                                                <tbody>
+                                                {% for i in [1,2,3,1,2,3,1,2,3,1,2,3] %}
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <td>가톨릭대학교 인천성모병원</td>
+                                                    </tr>
+                                                {% endfor %}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="view view3" style="display: none;">
+                            <div class="box">
+                                <div class="map">
+                                    <img src="./assets/images/11-map3.png" alt="">
+                                </div>
+                                <div class="list">
+                                    <div class="table type2">
+                                        <button class="active">
+                                            <h3>충청·호남권역</h3>
+                                            <span></span>
+                                        </button>
+                                        <div class="tbox">
+                                            <table class="active">
+                                                <tbody>
+                                                {% for i in [1,2,3,1,2,3,1,2,3,1,2,3] %}
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <td>가톨릭대학교 인천성모병원</td>
+                                                    </tr>
+                                                {% endfor %}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="view view4" style="display: none;">
+                            <div class="box">
+                                <div class="map">
+                                    <img src="./assets/images/11-map4.png" alt="">
+                                </div>
+                                <div class="list">
+                                    <div class="table type3">
+                                        <button class="active">
+                                            <h3>영남권역</h3>
+                                            <span></span>
+                                        </button>
+                                        <div class="tbox">
+                                            <table class="active">
+                                                <tbody>
+                                                {% for i in [1,2,3,1,2,3,1,2,3,1,2,3] %}
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <td>가톨릭대학교 인천성모병원</td>
+                                                    </tr>
+                                                {% endfor %}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script>
+        $(function(){
+          $('.areaView .view button').on('click', function(e){
+            e.preventDefault();
+            $(this).toggleClass('active')
+            $(this).parents('.table').find('table').toggleClass('active');
+          })
+
+          $('.areatab a').on('click', function(e){
+            e.preventDefault();
+            var value = $(this).data('id');
+            $('.areatab a').removeClass('active');
+            $(this).addClass('active');
+            $('.areaView .view').hide();
+            $('.areaView .view.view' + value).stop().fadeIn();
+          })
+        })
+    </script>
+{% endblock %}

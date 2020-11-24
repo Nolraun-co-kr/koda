@@ -24,9 +24,9 @@
         <div class="logo">
             <img src="./assets/images/header-message-logo.png" alt="">
         </div>
-        <p class="text font-myeongjo">
+        <Marquee class="text font-myeongjo">
             “지금 우리의 헤어짐이 영원한 이별이 아닌 잠시 동안 작별이라 생각하고 그리움은 간직하겠지만 슬픔은 잊어볼게 언니야 사랑해”..........
-        </p>
+        </Marquee>
         <span class="author font-myeongjo">추모자 : 한**</span>
     </div>
 </div>
@@ -591,7 +591,51 @@
                         <div class="tabCont">
                             <div class="tabItem">
                                 <div class="box">
-                                    <img src="./assets/images/graph2.png" alt="">
+
+                                    <div class="barChart6">
+                                        <p class="unit">단위 : 명</p>
+                                        <div class="status">
+                                            <div class="col type1">
+                                                <header>
+                                                    전국 <strong>404</strong>
+                                                </header>
+                                                <div class="progress">
+                                                    <span style="width: 40%;"></span>
+                                                </div>
+                                                <p>전일대비(+2)</p>
+                                            </div>
+                                            <div class="col type2">
+                                                <header>
+                                                    중부권역 <strong>223</strong>
+                                                </header>
+                                                <div class="progress">
+                                                    <span style="width: 40%;"></span>
+                                                </div>
+                                                <p>전일대비(+2)</p>
+                                            </div>
+                                            <div class="col type3">
+                                                <header>
+                                                    충청·호남권역 <strong>72</strong>
+                                                </header>
+                                                <div class="progress">
+                                                    <span style="width: 40%;"></span>
+                                                </div>
+                                                <p>전일대비(+2)</p>
+                                            </div>
+                                            <div class="col type4">
+                                                <header>
+                                                    영남권역 <strong>23</strong>
+                                                </header>
+                                                <div class="progress">
+                                                    <span style="width: 40%;"></span>
+                                                </div>
+                                                <p>전일대비(+2)</p>
+                                            </div>
+                                        </div>
+                                        <canvas id="barChart"></canvas>
+                                    </div>
+
+
                                 </div>
                                 <div class="box">
                                     <div class="subTit">
@@ -914,6 +958,47 @@
 <script src="./assets/plugins/slick/slick.js"></script>
 <script src="./assets/js/ui.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+    <script>
+
+      var ctx = document.getElementById('barChart').getContext('2d');
+      var barChartData = {
+        labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        datasets: [{
+          label: '영남권역',
+          backgroundColor: '#f1a24e',
+          stack: 'bar',
+          data: [
+            1,2,3,4,5,6,7,1,2,3,1,2
+          ],
+          order: 1
+        }, {
+          label: '충청·호남권역',
+          backgroundColor: '#2e81b1',
+          stack: 'bar',
+          data: [
+            1,2,3,4,5,6,7,1,2,3,1,2
+          ],
+          order: 1
+        }, {
+          label: '중부권역',
+          backgroundColor: '#4aa179',
+          stack: 'bar',
+          data: [
+            1,2,3,4,5,6,7,1,2,3,1,2
+          ],
+          order: 1
+        }]
+      };
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: barChartData,
+        options: {
+          showAllTooltips: true,
+        }
+      });
+    </script>
 
 </body>
 </html>

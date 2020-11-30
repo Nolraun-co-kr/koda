@@ -13,16 +13,24 @@
         <div class="sub__navigation">
             <div class="wrap flex">
                 <a href="/" class="home">홈</a>
+                <!-- 수정된 서브 셀렉터 -->
                 <div class="select">
-                    <select name="" id="">
-                        <option value="">장기·조직 기증</option>
-                    </select>
+                    <button>장기·조직 기증</button>
+                    <div class="dropdown">
+                        <a href="">서브1</a>
+                        <a href="">서브2</a>
+                        <a href="">서브3</a>
+                    </div>
                 </div>
-                <div class="select select--depth">
-                    <select name="" id="">
-                        <option value="">장기·조직 기증</option>
-                    </select>
+                <div class="select">
+                    <button>장기·조직 기증</button>
+                    <div class="dropdown">
+                        <a href="">서브1</a>
+                        <a href="">서브2</a>
+                        <a href="">서브3</a>
+                    </div>
                 </div>
+                <!-- // 수정된 서브 셀렉터 -->
                 <a href="" class="link">기증희망등록 신청</a>
             </div>
         </div>
@@ -31,19 +39,21 @@
 
 
     <div class="sub__content">
+        {% include './layout/lnb.njk' %}
         <div class="wrap">
             <div class="sub__header">
                 <h2>뇌사장기기증과 인체조직기증 이렇게 진행됩니다.</h2>
             </div>
-
             <div class="sub__tabs">
                 <a href="">장기만 기증 시</a>
                 <a href="" class="active">조직기증 동의 시</a>
 
                 <div class="select">
-                    <select name="" id="">
-                        <option value="">조직기증 동의 시</option>
-                    </select>
+                    <button>조직기증 동의 시</button>
+                    <div class="dropdown">
+                        <a href="">장기만 기증 시</a>
+                        <a href="">조직기증 동의 시</a>
+                    </div>
                 </div>
             </div>
 

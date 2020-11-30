@@ -165,4 +165,14 @@
   $('.datepicker').datepicker({
     dateFormat: 'yy-mm-dd'
   });
+
+  $('.sub__navigation .select button').on('click', function(e){
+    e.preventDefault();
+    $(this).siblings('.dropdown').stop().slideToggle();
+  })
+
+  $('.sub__tabs .select button').on('click', function(e){
+    e.preventDefault();
+    $(this).siblings('.dropdown').stop().slideToggle();
+  })
 })(window, $)

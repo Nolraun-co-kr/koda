@@ -13,21 +13,9 @@
             <div class="sub__navigation">
                 <div class="wrap flex">
                     <a href="/" class="home">홈</a>
-                    <div class="select">
-                        <select name="" id="">
-                            <option value="">정보공개</option>
-                        </select>
-                    </div>
-                    <div class="select select--depth">
-                        <select name="" id="">
-                            <option value="">정보공개</option>
-                        </select>
-                    </div>
-                    <div class="select select--depth">
-                        <select name="" id="">
-                            <option value="">사업실명제</option>
-                        </select>
-                    </div>
+                    {% include './layout/nselect.njk' %}
+                    {% include './layout/nselect.njk' %}
+                    {% include './layout/nselect.njk' %}
                     <a href="" class="link">기증희망등록 신청</a>
                 </div>
             </div>
@@ -47,7 +35,7 @@
                                 <span>투명한 기관 운영 정보를 공유합니다.</span>
                             </h3>
                             <p>
-                                사업실명제란 사업의 지속성 및 책임성을 확보하기 위하여 대상사업 선정기준에 따라 국민에게 사업을 공개하는 제도입니다. 
+                                사업실명제란 사업의 지속성 및 책임성을 확보하기 위하여 대상사업 선정기준에 따라 국민에게 사업을 공개하는 제도입니다.
                             </p>
                             <p class="red">※ 사업에 대한 자세한 사항은 담당부서로 문의하시기 바랍니다.</p>
                         </div>

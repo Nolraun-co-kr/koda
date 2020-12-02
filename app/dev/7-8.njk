@@ -13,16 +13,8 @@
             <div class="sub__navigation">
                 <div class="wrap flex">
                     <a href="/" class="home">홈</a>
-                    <div class="select">
-                        <select name="" id="">
-                            <option value="">KODA</option>
-                        </select>
-                    </div>
-                    <div class="select select--depth">
-                        <select name="" id="">
-                            <option value="">인권경영</option>
-                        </select>
-                    </div>
+                    {% include './layout/nselect.njk' %}
+                    {% include './layout/nselect.njk' %}
                     <a href="" class="link">기증희망등록 신청</a>
                 </div>
             </div>
@@ -73,7 +65,7 @@
                                         <td>2</td>
                                         <td>
                                             <a href="">
-                                                2020년 인권영향평가 결과 보고서 및 인권경영 추진 최종보고서 
+                                                2020년 인권영향평가 결과 보고서 및 인권경영 추진 최종보고서
                                             </a>
                                         </td>
                                         <td>2020-10-06</td>

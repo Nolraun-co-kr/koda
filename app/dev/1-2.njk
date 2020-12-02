@@ -13,21 +13,8 @@
         <div class="sub__navigation">
             <div class="wrap flex">
                 <a href="/" class="home">홈</a>
-                <div class="select">
-                    <select name="" id="">
-                        <option value="">장기·조직 기증</option>
-                    </select>
-                </div>
-                <div class="select select--depth">
-                    <select name="" id="">
-                        <option value="">장기·조직 기증</option>
-                    </select>
-                </div>
-                <div class="select select--depth">
-                    <select name="" id="">
-                        <option value="">생명나눔이란 무엇인가요?</option>
-                    </select>
-                </div>
+                {% include './layout/nselect.njk' %}
+                {% include './layout/nselect.njk' %}
                 <a href="" class="link">기증희망등록 신청</a>
             </div>
         </div>

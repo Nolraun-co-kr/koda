@@ -13,16 +13,8 @@
             <div class="sub__navigation">
                 <div class="wrap flex">
                     <a href="/" class="home">홈</a>
-                    <div class="select">
-                        <select name="" id="">
-                            <option value="">장기·조직 기증</option>
-                        </select>
-                    </div>
-                    <div class="select select--depth">
-                        <select name="" id="">
-                            <option value="">장기·조직 기증</option>
-                        </select>
-                    </div>
+                    {% include './layout/nselect.njk' %}
+                    {% include './layout/nselect.njk' %}
                     <a href="" class="link">기증희망등록 신청</a>
                 </div>
             </div>
@@ -39,13 +31,15 @@
                     <a href="" class="">수혜자 편지</a>
                     <a href="" class="">기증 후 스토리</a>
 
+
                     <div class="select">
-                        <select name="" id="">
-                            <option value="">기증자 추모관</option>
-                            <option value="">하늘나라 편지</option>
-                            <option value="">하늘나라 편지</option>
-                            <option value="">수혜자 편지</option>
-                        </select>
+                        <button>기증자 추모관</button>
+                        <div class="dropdown">
+                            <a href="" class="">기증자 추모관</a>
+                            <a href="" class="">하늘나라 편지</a>
+                            <a href="" class="">수혜자 편지</a>
+                            <a href="" class="">기증 후 스토리</a>
+                        </div>
                     </div>
                 </div>
                 <div class="memorial__search-form">

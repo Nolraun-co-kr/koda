@@ -572,6 +572,18 @@
     }
   }
   .top-txtBox {
+    @media screen and (max-width: 1224px) {
+      display: block;
+      text-align: center;
+      .img {
+        margin:0 auto;
+        margin-bottom: 15px;
+      }
+      img {
+        display: inline-block;
+      }
+    }
+
     .img {
       width: auto;
     }
@@ -590,7 +602,6 @@
       }
       .txt {
         p {
-          word-break: keep-all;
           br {
             display: none;
           }

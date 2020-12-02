@@ -13,16 +13,8 @@
             <div class="sub__navigation">
                 <div class="wrap flex">
                     <a href="/" class="home">홈</a>
-                    <div class="select">
-                        <select name="" id="">
-                            <option value="">장기·조직 기증</option>
-                        </select>
-                    </div>
-                    <div class="select select--depth">
-                        <select name="" id="">
-                            <option value="">장기·조직 기증</option>
-                        </select>
-                    </div>
+                    {% include './layout/nselect.njk' %}
+                    {% include './layout/nselect.njk' %}
                     <a href="" class="link">기증희망등록 신청</a>
                 </div>
             </div>
@@ -44,18 +36,18 @@
                     <a href="">기증자 구분</a>
                     <a href="" style="width: 35%;flex: none;">
                         장기·조직기증 활성화프로그램<br/>
-{#                        (Donation Improvement Program, DIP)#}
                     </a>
                     <a href="">기타</a>
 
                     <div class="select">
-                        <select name="" id="">
-                            <option value="">권역 구분</option>
-                            <option value="">병원 구분</option>
-                            <option value="">기증자 구분</option>
-                            <option value="">장기·조직기증 활성화프로그램</option>
-                            <option value="">기타</option>
-                        </select>
+                        <button>조직기증 동의 시</button>
+                        <div class="dropdown">
+                            <a href="">권역 구분</a>
+                            <a href="">병원 구분</a>
+                            <a href="">기증자 구분</a>
+                            <a href="">장기·조직기증 활성화프로그램</a>
+                            <a href="">기타</a>
+                        </div>
                     </div>
                 </div>
 

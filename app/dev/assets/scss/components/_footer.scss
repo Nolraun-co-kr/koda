@@ -102,6 +102,7 @@
     @media screen and (max-width: 768px) {
       flex-direction: column;
       padding: 0;
+      display: block;
     }
 
     .flex {
@@ -109,6 +110,7 @@
       display: flex;
       @media screen and (max-width: 550px) {
         flex-direction: column;
+        display: block;
         padding: 0;
       }
       .col {
@@ -221,14 +223,16 @@
       padding: 40px 10px;
     }
     @media screen and (max-width: 768px) {
-      @apply flex-col items-center;
+      @apply items-center;
       padding: 30px 10px;
+      display: block;
     }
   }
   .flex {
     @media screen and (max-width: 1620px) {
       @apply flex-col items-center;
       flex: none;
+      display: block;
     }
   }
   .logo {

@@ -738,6 +738,7 @@ a.redBtn {
       @apply flex-col;
       border: 1px solid #ddd;
       border-top: 2px solid #e64c3c;
+      display: block;
       .item {
         padding: 10px;
       }
@@ -762,6 +763,10 @@ a.redBtn {
     @media screen and (max-width: 768px) {
       .left {
         @apply flex-col;
+        display: block;
+        .img {
+          margin:0 auto;
+        }
       }
       h3 {
         font-size: 20px !important;

@@ -415,9 +415,11 @@
     border: 1px solid #ddd;
     border-top: 2px solid #000;
     margin-top: 100px;
+    height: 750px;
     @media screen and (max-width: 1220px) {
       margin-top: 80px;
-      display: block;
+      display: block !important;
+      height: auto !important;
     }
     @media screen and (max-width: 768px) {
       margin-top: 60px;
@@ -433,6 +435,9 @@
       & ~ .col {
         border-left: 1px solid #ddd;
         @apply flex flex-col;
+        @media screen and (max-width: 1220px) {
+          display: block;
+        }
 
       }
       .korea {

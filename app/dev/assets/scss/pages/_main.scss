@@ -412,6 +412,7 @@
     @apply flex;
     @media screen and (max-width: 1620px) {
       flex-direction: column;
+      display: block;
     }
   }
   .main__calendar {
@@ -678,6 +679,7 @@
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    display: block;
   }
   .col {
     @apply flex flex-col justify-center;
@@ -771,6 +773,7 @@
     @media screen and (max-width: 1620px) {
       flex-direction: column;
       padding: 0;
+      display:block;
     }
   }
   .left {
@@ -1120,7 +1123,7 @@
     padding: 0;
     @apply flex bg-white;
     @media screen and (max-width: 1620px) {
-      flex-direction: column;
+      display: block;
     }
   }
   .left {
@@ -1186,6 +1189,7 @@
     }
     @media screen and (max-width: 768px) {
       flex-direction: column;
+      display: block;
     }
 
     .row {

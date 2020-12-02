@@ -143,13 +143,17 @@
     padding:0 30px;
     background:#e64c3c;
     color:#fff;
+    display: none;
     @media screen and (max-width: 1620px) {
       padding: 0 20px;
       font-size: 16px;
       line-height: 50px;
     }
     @media screen and (max-width: 768px) {
-      display: none;
+      display: block;
+      line-height: 45px;
+      padding:0 10px;
+      font-size: 14px;
     }
   }
 }
@@ -247,7 +251,18 @@
       height: 50px;
       font-size: 16px;
       padding:0 15px;
-      background:#ff7e00 url('../images/mobile-navi-arrow.png') no-repeat calc(100% - 15px) center;
+      background:#ff7e00 ;
+      position: relative;
+      &:after {
+        content: '';
+        width: 20px;
+        height: 13px;
+        background: url('../images/mobile-navi-arrow.png') no-repeat center;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+      }
       background-size: auto 10px;
       @media screen and (max-width: 1620px) {
         font-size: 16px;

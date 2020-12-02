@@ -13,21 +13,9 @@
             <div class="sub__navigation">
                 <div class="wrap flex">
                     <a href="/" class="home">홈</a>
-                    <div class="select">
-                        <select name="" id="">
-                            <option value="">정보공개</option>
-                        </select>
-                    </div>
-                    <div class="select select--depth">
-                        <select name="" id="">
-                            <option value="">정보공개</option>
-                        </select>
-                    </div>
-                    <div class="select select--depth">
-                        <select name="" id="">
-                            <option value="">사전정보 공개</option>
-                        </select>
-                    </div>
+                    {% include './layout/nselect.njk' %}
+                    {% include './layout/nselect.njk' %}
+                    {% include './layout/nselect.njk' %}
                     <a href="" class="link">기증희망등록 신청</a>
                 </div>
             </div>
@@ -73,7 +61,7 @@
                                         <td>1</td>
                                         <td>
                                             <a href="">
-                                               2020년 1월~8월 자체공시(수의계약, 상품권 구매 및 사용, 기관장 업무추진비, 자체감사) 
+                                               2020년 1월~8월 자체공시(수의계약, 상품권 구매 및 사용, 기관장 업무추진비, 자체감사)
                                             </a>
                                         </td>
                                         <td>2020-10-06</td>

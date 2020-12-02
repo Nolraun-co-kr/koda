@@ -52,7 +52,7 @@
     }
     td {
       padding: 10px;
-      font-size: 16pxsub-category;
+      font-size: 16px;
     }
   }
 }
@@ -96,10 +96,12 @@
     }
     @media screen and (max-width: 768px) {
       @apply flex-col;
+      display: block;
       a {
         font-size: 16px;
         line-height: 50px;
         border-bottom: 1px solid #ddd;
+        display: block;
         &:last-child {
           border-bottom: none;
         }
@@ -431,6 +433,11 @@
     .sign {
       margin-right: 90px;
       padding-left: 60px;
+      flex: none;
+      width: 365px;
+      @media screen and (max-width: 768px) {
+        width: 330px;
+      }
       span {
         font-size: 18px;
         color: #333;
@@ -453,6 +460,7 @@
     }
     @media screen and (max-width: 1200px) {
       @apply flex-col items-center;
+      display: block;
     }
     @media screen and (max-width: 768px) {
       .sign {
@@ -860,6 +868,7 @@
     }
     @media screen and (max-width: 1024px) {
       @apply flex-col;
+      display: block;
       .img {
         margin-right: 0;
         padding: 20px 0;
@@ -990,8 +999,10 @@
       border-bottom: 1px solid #ddd;
       .thumb {
         margin-right: 40px;
+        width: 200px;
       }
       .info {
+        width: calc(100% - 220px);
         .tit {
           font-size: 20px;
           color: #333;
@@ -1049,14 +1060,19 @@
       .row {
         a {
           @apply flex-col;
+          display: block;
         }
         .thumb {
           @apply w-full;
           margin-right: 0;
           margin-bottom: 10px;
+          width: 100%;
           img {
             width: 100%;
           }
+        }
+        .info {
+          width: 100%;
         }
       }
     }

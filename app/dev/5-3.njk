@@ -13,21 +13,9 @@
             <div class="sub__navigation">
                 <div class="wrap flex">
                     <a href="/" class="home">홈</a>
-                    <div class="select">
-                        <select name="" id="">
-                            <option value="">홍보·자료</option>
-                        </select>
-                    </div>
-                    <div class="select select--depth">
-                        <select name="" id="">
-                            <option value="">홍보 콘텐츠</option>
-                        </select>
-                    </div>
-                    <div class="select select--depth">
-                        <select name="" id="">
-                            <option value="">웹콘텐츠</option>
-                        </select>
-                    </div>
+                    {% include './layout/nselect.njk' %}
+                    {% include './layout/nselect.njk' %}
+                    {% include './layout/nselect.njk' %}
                     <a href="" class="link">기증희망등록 신청</a>
                 </div>
             </div>
@@ -47,7 +35,7 @@
                 <div class="memorial__detail-content file-type">
                     <header>
                         <h3 class="title">
-                            닥터프렌즈와 함께하는 생생한 생명나눔 Story 
+                            닥터프렌즈와 함께하는 생생한 생명나눔 Story
                         </h3>
                         <div class="info">
                             <div class="col">

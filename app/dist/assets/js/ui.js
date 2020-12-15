@@ -1,7 +1,16 @@
 "use strict";
 
 (function (window, $) {
-  // sitemap toggle
+  $('.sub__lnb .link').on('click', function (e) {
+    if ($(this).siblings('.depth').length > 0) {
+      e.preventDefault();
+      $('.sub__lnb .depth').stop().slideUp();
+      $(this).siblings('.depth').stop().slideDown();
+      $('.sub__lnb .link').removeClass('active');
+      $(this).addClass('active');
+    }
+  }); // sitemap toggle
+
   $('.sitemap .btn').on('click', function () {
     $(this).parents('.sitemap').stop().slideUp();
   });

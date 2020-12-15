@@ -5,6 +5,16 @@
   top: 100px;
   background:#f4f5f6;
   border: 1px solid #ddd;
+  z-index: 3000;
+
+  h2 {
+    padding:0 30px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 100px;
+    color:#fff;
+    background:#444;
+  }
 
   @media screen and (max-width: 1800px) {
     display: none;
